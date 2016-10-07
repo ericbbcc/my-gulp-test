@@ -8,6 +8,7 @@ var webpack = require('webpack');
 var gutil = require('gutil');
 var webpack = require('webpack');
 var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
+var compress = new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}});
 var path = require('path');
 
 var plumberOp = {errorHandler: notify.onError('Error:<%= error.message %>')};
