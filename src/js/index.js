@@ -1,3 +1,5 @@
-/**
- * Created by floatlu on 10/7/16.
- */
+var $ = require('zepto');
+
+$('.btn').on('click', function() {
+    alert('ok');
+});
